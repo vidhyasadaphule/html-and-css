@@ -1,0 +1,14 @@
+
+
+CSSS BEST PRACTICES 
+
+1. use box-sizing border box so padding is applied inside the .
+2. use clear property with float property to hand floating elements.
+3. use overflow:auto.
+4. use calc function to give top and left positioning for centering a div.
+5.reset the css or do this before stating to code any page.
+ *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+ }

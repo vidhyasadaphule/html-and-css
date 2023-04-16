@@ -1,0 +1,52 @@
+<!-- 
+Date : 11/3/2023
+Auth : Vidhya Sadaphule
+Subject :flex in css
+
+Description : 
+       FLEX IN CSS
+        1.The flex CSS shorthand property sets how a flex item will grow or shrink to fit the space available in its flex container.
+        
+        
+Github : 
+    last updated : 
+    last updated By :  
+-->
+<style>
+    .flex-container{
+        background-color:red;
+        display: flex;
+        flex-direction: row; /*row row-reverse column column-reverse*/
+        flex-wrap: wrap ;/*wrap - adjusts by shrinking  no wraps - does not adjusts it by keeping it to the orginal size */
+        /* flex-flow: row wrap;  combination of flex direction and flex warp*/
+        /* justify-content: space-around;space-between flex-start flex-end center--this works in horizontal direction */
+        align-items:center ; /*stretch center flex-start flex-end*/
+        height:400px;
+       align-content: space-between;  /* space-around;space-between flex-start flex-end center--this works in vertical direction */
+    }
+    .flex-child{
+      background-color: yellow;
+      width:200px;
+      height:50px;
+      margin:10px ;
+      padding:10px;
+      text-align: center;
+      
+    }
+    
+    
+</style>
+<body>
+    <div class="flex-container">
+        <div class="flex-child">one</div>
+        <div class="flex-child">two</div>
+        <div class="flex-child">three</div>
+        <div class="flex-child">four</div>
+        <div class="flex-child">five</div>
+        <div class="flex-child">six</div>
+        <div class="flex-child">seven</div>
+        <div class="flex-child">eight</div>
+    </div>
+    
+
+</body>

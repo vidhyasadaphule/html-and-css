@@ -1,0 +1,43 @@
+<!-- 
+Date : 9/3/2023
+Auth : Vidhya Sadaphule
+Subject : box-sizing 
+
+Description : 
+       BOX - SIZING
+
+        1.box sizing property does not change the actual height and width of the element after padding and border is applied .
+        2.The box-sizing property allows us to include the padding and border in an element's total width and height.  
+        
+Github : 
+    last updated : 
+    last updated By :  
+-->
+<style>
+    .div1{
+        width:300px;
+        height:100px;
+        padding:20px;
+        border: solid red 2px;
+    }
+    
+    .div2{
+        width:300px;
+        height:100px;
+        padding: 30px;
+        border: solid red 2px;
+        box-sizing: border-box;
+    }
+    .div3{
+        width:300px;
+        height:100px;
+        border: solid red 2px;
+        box-sizing: border-box;
+    }
+</style>
+<body>
+    <div class="div1">dummy text</div>
+    <div class="div2">dummy text</div>
+    <div class="div3">dummy text</div>
+
+</body>

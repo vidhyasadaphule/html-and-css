@@ -1,0 +1,104 @@
+<!-- 
+    Date : 8/3/2023
+    Auth : Vidhya Sadaphule
+    Subject : types of  selector   , specificity
+    Description : 
+            1.UNIVERSAL SELECTOR
+
+            1.universal selector is denoted by (*) asterisk.
+            2.universal selector selects all elements in a web page.
+            3. The * selector can also select all child elements inside an element.
+            
+            2.TAG SELECTOR / ELEMENT SELECTOR
+
+            1.Element Selector in CSS tries to match the HTML elements having the same name.
+            2.we just need to specify the specific tag name we want to select. 
+            
+
+            3. ID SELECTOR
+            
+            1.id selector is denoted by (#) hash.
+            2.The id selector uses the id attribute of an HTML element to select a specific element..
+            3.The id should have unique name.
+            4.only one id can be given to an element.
+
+            4. CLASS SELECTOR
+            
+            1.class selector is denoted by (.) dot.
+            2.The class selector selects HTML elements with a specific class attribute.
+            3.multiple classes can be used on an element.
+
+            5. GROUP SELECTOR
+            
+            1.The CSS grouping selector is used to select multiple elements and style them together.
+            2.Grouping selector is used to minimize the code. Commas are used to separate each selector in grouping.
+
+            #multiple ids cannot be given to the same the element but it can be used multiple times on multiple elements
+
+            SPECIFICITY
+
+            priortization of selectors
+
+            1.inline style given.
+            2.id
+            3.class
+            4.element selector
+
+    Github : 
+        last updated : 
+        last updated By :  
+-->
+
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Document</title>
+                <style>
+                /* universal selector */
+                *{
+                        background-color: blanchedalmond;
+                }
+                /* element selector */
+                     p{
+                        background-color: yellow;
+                     } 
+                /* group selector */
+                     div,h1{
+                        background-color: red;
+                        display:inline-block;
+                        border:solid ;
+                        width:200px;
+                     }
+                /* id selector */
+                #id-ex{
+                        background-color: blueviolet;
+                }
+                /* class selector */
+                .class-ex{
+                        background-color: aqua;
+
+                }
+                </style>
+          </head>
+          <body>
+                <div>
+                        <h1>hello world</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ut hic delectus, illo error voluptates velit et tempore minus necessitatibus incidunt ab eveniet porro ipsam laboriosam dignissimos id suscipit recusandae!</p>
+                </div>
+                
+                <div id="id-ex">
+                       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere eius sit illum architecto. Dicta, rerum magnam repellendus id eaque quia accusamus, maiores amet omnis iure nam tenetur asperiores voluptatem minima.</p>
+                </div>
+
+                <div class="class-ex" >
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur praesentium obcaecati illum commodi nemo sint, nostrum rem, saepe, sapiente nulla aliquid est similique reiciendis qui culpa consequuntur omnis exercitationem ipsam.</p>
+                </div>
+
+                <p id="id-ex">hello world</p>
+                
+                
+          </body>
+          </html>

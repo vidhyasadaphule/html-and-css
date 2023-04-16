@@ -1,0 +1,89 @@
+<!-- 
+Date : 11/3/2023
+Auth : Vidhya Sadaphule
+Subject :Clear in css
+
+Description : 
+       CLEAR IN CSS
+        1.The clear property specifies what should happen with the element that is next to a floating element.
+        
+Github : 
+    last updated : 
+    last updated By :  
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        border:solid red 1px;
+    }
+    .img1{
+        float:right;
+    }
+    .img2{
+        float: left;
+        /* overflow: auto; */
+    }
+    .block1{
+        overflow: auto;
+    }
+    .p1{
+        clear:right;
+    }
+    .p2{
+        clear:left;
+    }
+    .container2{
+        height:300px;
+        width:auto;
+        background-color: grey;
+        border:solid red 1px;
+    }
+    .container3{
+        height:300px;
+        width:auto;
+        background-color: grey;
+        border:solid blue 1px;
+    }
+    .img3{
+        float:right;
+    }
+    .img4{
+        clear:right;
+    }
+    .img5{
+        float:left;
+    }
+    .img6{
+        clear:left;
+    }
+    
+
+</style>
+<body>
+    <div class="container">
+      <div class="block1">
+      <img class="img1" src="https://via.placeholder.com/100x100" alt="">
+      <p class="p1">  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis odio delectus natus laboriosam deleniti magnam iusto debitis! Aspernatur eaque animi maxime eveniet exercitationem cupiditate error id accusamus sequi aliquid nostrum, adipisci doloribus cum magni. Accusantium </p>
+    </div>
+      <img class="img2" src="https://via.placeholder.com/100x100" alt="">
+      <p class="p2">  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis odio delectus natus laboriosam deleniti magnam iusto debitis! Aspernatur eaque animi maxime eveniet exercitationem cupiditate error id accusamus sequi aliquid nostrum, adipisci doloribus cum magni. Accusantium sint tenetur fugiat laboriosam incidunt illo! Tenetur illum saepe neque, quos possimus nesciunt unde laboriosam suscipit obcaecati dolor provident consequatur minima nulla ut ipsum, numquam enim. Vitae optio similique veniam soluta repellendus, minus ex facilis impedit enim officia nulla ea voluptas explicabo incidunt! Illo dicta, eveniet quaerat reiciendis nostrum dignissimos deserunt quisquam exercitationem? Quas quos excepturi quisquam ducimus sapiente fugiat a, distinctio doloribus assumenda?</p>
+    </div>
+        <div class="container2">
+        <img class="img3" src="https://via.placeholder.com/100x100" alt="">
+        <img class="img4" src="https://via.placeholder.com/100x100" alt="">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero adipisci repellat a veniam eum, magnam soluta velit. Velit sint aperiam blanditiis. Fugit molestiae cupiditate repellat harum aliquid iste perferendis soluta quidem unde quam facilis totam, sapiente consequatur fugiat eos hic quia inventore ea et culpa aliquam mollitia reiciendis deleniti. Nostrum
+        </div>
+        <div class="container3">
+        <img class="img5" src="https://via.placeholder.com/100x100" alt="">
+        <img class="img6" src="https://via.placeholder.com/100x100" alt="">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero adipisci repellat a veniam eum, magnam soluta velit. Velit sint aperiam blanditiis. Fugit molestiae cupiditate repellat harum aliquid iste perferendis soluta quidem unde quam facilis totam, sapiente consequatur fugiat eos hic quia inventore ea et culpa aliquam mollitia reiciendis deleniti. Nostrum.
+        </div>
+</body>
+</html>

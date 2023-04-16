@@ -1,0 +1,58 @@
+<!-- 
+Date : 14/3/2023
+Auth : Vidhya Sadaphule
+Subject : media queries in css
+Description : 
+            MEDIA QUERIES IN CSS
+         1.The @media rule, introduced in CSS2, made it possible to define different style rules for different media types.
+              
+Github : 
+    last updated : 
+    last updated By :  
+-->
+<style>
+   p{
+    color:blue;
+    text-align: center;
+    font-size: 30px;
+   }
+   #div-1{
+        height:300px;
+        width:70%;
+        background-color: blue;
+   }
+   #div-2{
+    height:300px;
+    width:30%;
+    background-color: yellow;
+
+   }
+   /* for chaningin the colour to red on devices with 991px width */
+   @media screen and (max-width:991px){
+   p{
+      color:red;
+   } 
+   }
+
+   /* at the screen above 400px 'the bg color will be pink' */
+   @media screen and (min-width:400px){
+    #div-1{
+          background-color:pink;
+    }
+   }
+   
+   /* at screen sizes between 300px to 400px */
+   @media screen and (min-width:300px) and (max-width:400px){
+    #div-2 {
+           background-color: black!important;
+           color: white;
+    }
+   }
+
+
+</style>
+<body>
+    <div id="div-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe laudantium sapiente commodi error. Illo voluptas, placeat dicta porro ipsum vero? Repellat consequuntur ut eum repudiandae id explicabo suscipit nostrum natus nam est cum iusto facere maiores recusandae quos, tempora sapiente nemo eveniet! Eius assumenda voluptatem similique commodi tenetur, repellendus excepturi!</div>
+    <div id="div-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe laudantium sapiente commodi error. Illo voluptas, placeat dicta porro ipsum vero? Repellat consequuntur ut eum repudiandae id explicabo suscipit nostrum natus nam est cum iusto facere maiores recusandae quos, tempora sapiente nemo eveniet! Eius assumenda voluptatem similique commodi tenetur, repellendus excepturi!</div>
+
+</body>

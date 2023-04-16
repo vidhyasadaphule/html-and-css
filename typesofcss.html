@@ -1,0 +1,61 @@
+<!-- 
+Date : 11/3/2023
+Auth : Vidhya Sadaphule
+Subject : types of css
+Description : 
+       TYPES OF CSS
+
+       1.inline css
+        CSS writtem using style attribute in a specific tag  is called inline css.
+        css is applied only to that particular tag where it is written.
+        #highest priority is given 
+
+       2.internal css
+       CSS written using style tag in head section is called a internal css.
+       can be applied to multiple tags that are selected .
+
+       3.external  css
+       CSS written in a different file with .css extension and used in a web page with help of link tag mentioned in the head section of the html document.
+       is called external css.
+       the link tag used has two attributes <link rel="stylesheet" href="mystyle.css">
+       rel shows relation , href provides reference of the css file.
+       can be applied on multiple tags.
+
+       external css can be included in internal css using import url.
+       at the top inside the style tag
+       @import url("mystyle.css");
+
+      # inline css can be overriden using !important keyword.
+    
+Github : 
+    last updated : 
+    last updated By :  
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <!--external css-->
+</head>
+<style>
+    /* @import url("mystyle.css"); */
+    /* internal css */
+    p{
+        background-color: red;
+    }
+
+    /* background color overriden  */
+    p{
+        background-color:pink!important;
+    }
+</style>
+<body>
+   <p style="background-color:blue;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, dolores?</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic fugit provident in totam asperiores nulla aperiam, unde perferendis cupiditate dolor.</p>
+    
+</body>
+</html>

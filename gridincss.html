@@ -1,0 +1,67 @@
+<!-- 
+Date : 14/3/2023
+Auth : Vidhya Sadaphule
+Subject : grid in css
+Description : 
+       GRID IN CSS
+        1.The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.
+        2.grid workd for 2d alignment in rows and columns.
+
+
+        
+Github : 
+    last updated : 
+    last updated By :  
+-->
+<style>
+    .grid-container{
+        width:100%;
+        /* height: 400px; */
+        background-color: indianred;
+        padding:20px;
+        display: grid;
+        /* to divide how many columns */
+        grid-template-columns: auto auto auto ;
+        /* grid-template-rows:100px 200px 100px; */
+        grid-column-gap: 30px;
+        grid-row-gap: 10px;
+        justify-content: space-evenly;
+        /* align-content: end; */
+
+        
+    }
+    .grid-child{
+        
+        background-color: bisque;
+        border: solid 2px;
+        padding:20px;
+        text-align:center;
+        font-size: 40px;
+    }
+    #grid-1{
+        /* grid-column-start: 1;
+        grid-column-end: 3; */
+        /* grid-row-start: 1;
+        grid-row-end:3 */
+
+    }
+    #grid-5{
+        grid-area: 1/2/4/5;
+    }
+
+
+
+</style>
+<body>
+    <div class="grid-container">
+        <div class="grid-child" id="grid-1" >one</div>
+        <div class="grid-child" id="grid-2">two</div>
+        <div class="grid-child" id="grid-3">three</div>
+        <div class="grid-child" id="grid-4">four</div>
+        <div class="grid-child" id="grid-5">five</div>
+        <div class="grid-child" id="grid-6">six</div>
+        <div class="grid-child" id="grid-7">seven</div>
+        <div class="grid-child" id="grid-8">eight</div>
+        <div class="grid-child" id="grid-9">nine</div>
+    </div>
+</body>

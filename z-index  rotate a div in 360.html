@@ -1,0 +1,56 @@
+<!-- 
+Date : 14/3/2023
+Auth : Vidhya Sadaphule
+Subject : z-index in css
+Description : 
+       Z-INDEX IN CSS
+       the z-index property specifies the stack order of an element.
+
+        An element with greater stack order is always in front of an element with a lower stack order.
+
+        Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display:flex elements).
+
+        Note: If two positioned elements overlap without a z-index specified, the element positioned last in the HTML code will be shown on top. 
+
+     
+    ROTATE A DIV IN 360
+
+    set the transform to rotateZ(360)
+
+
+        
+Github : 
+    last updated : 
+    last updated By :  
+-->
+
+<style>
+    .box{
+        background-color: red;
+        width:200px;
+        height:200px;
+        border: 2px solid gold;
+        border-bottom: 10px solid gold;
+        border-radius: 5px;
+        transition: background 3s,transform 1s;
+
+    }
+    .box:hover{
+        background: blue;
+        transform: rotateZ(360deg);
+    }
+
+
+    img{
+        left: 0px;
+        top: 0px;
+        position: absolute;
+        z-index:1;
+    }
+</style>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, repudiandae?</h1>
+<img src="sp.png" alt="sprite">
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos porro pariatur, eos molestiae a aliquid? Cum ab non ad a.</p>
+<center>
+    <div class="box"></div>
+</center>

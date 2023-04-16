@@ -1,0 +1,89 @@
+<!-- 
+Date : 14/3/2023
+Auth : Vidhya Sadaphule
+Subject : center a div
+Description : 
+         
+        CENTER A DIV HORIZONTALLY AND VERTICALLY
+        1. using flexbox properties. aplying properties to the parent element
+        
+        
+        
+Github : 
+    last updated : 
+    last updated By :  
+-->
+<style>
+    /* when we want to center inside the body */
+    /* body,html{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #div-outer{
+        height:300px;
+        width:300px;
+        background-color: pink;
+    } */
+
+    /* TO CENTER INSIDE DIV IN DIV
+    
+    body,html{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #div-outer{
+        height:300px;
+        width:300px;
+        background-color: pink;
+        display: flex;
+        justify-content: center;
+       
+    }
+    #div-inner{
+        height:60px;
+        width:60px;
+        background-color: red;
+        align-self:center;
+    } */
+
+    /* align using margin:auto */
+    body,html{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #div-outer{
+        height:300px;
+        width:300px;
+        background-color: pink;
+        position: relative;
+    }
+    #div-inner{
+        height:60px;
+        width:60px;
+        background-color: red;
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left:0;
+        right: 0; 
+        margin:auto;
+
+    } 
+
+</style>
+<body>
+   <div id="div-outer">
+    <div id="div-inner">
+
+    </div>
+   </div> 
+</body>

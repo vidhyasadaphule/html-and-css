@@ -1,0 +1,41 @@
+<!-- 
+Date : 21/3/2023
+Auth : Vidhya Sadaphule
+Subject : canvas in css
+Description : 
+       CANVAS TAG
+       1.canvas tag is used to draw graphics via javascript.
+       2.canvas tag is transparent it actually acts as an container for drawing graphics inside. 
+        
+Github : 
+    last updated : 
+    last updated By :  
+-->
+<body>
+    <canvas id="mycanvas"></canvas>
+
+<script>
+    var canvas = document.getElementById('mycanvas');
+    var ctx=canvas.getContext('2d');
+    ctx.fillStyle = "#FF0000";
+    ctx.fillRect(0,0,100,50)
+</script>
+
+
+<canvas id="drawcircle"> </canvas>
+<script>
+    var canvas=document.getElementById('drawcircle');
+    var ctx=canvas.getContext('2d');
+    // ctx.fillStyle  ="#FF0000";
+    ctx.arc(100, 75, 50, 0, 2 * Math.PI);
+    ctx.stroke();
+</script>
+</body>
+
+
+
+
+
+
+
+
